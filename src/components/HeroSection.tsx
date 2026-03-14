@@ -44,16 +44,20 @@ const HeroSection = () => (
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
-            <motion.img
-              src={profilePhoto}
-              alt="Avinash Reddy"
-              className="w-[120px] h-[120px] rounded-full object-cover shadow-smooth ring-4 ring-primary/30"
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4 md:gap-6 mb-6">
+            <motion.div
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-card shadow-lg mx-auto md:mx-0 flex-shrink-0"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
-            />
-            <div>
+            >
+              <img
+                src={profilePhoto}
+                alt="Avinash Reddy"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <div className="text-center md:text-left">
               <TypeWriter text="Avinash Reddy" highlight="Reddy" />
               <motion.p
                 className="mt-2 text-xl font-semibold text-primary"
