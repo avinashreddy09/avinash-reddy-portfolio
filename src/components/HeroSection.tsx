@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
@@ -8,6 +9,29 @@ const stats = [
   { icon: "⚡", label: "80%", sub: "Effort Reduction" },
   { icon: "🧠", label: "150+", sub: "LeetCode Problems" },
 ];
+
+const TypeWriter = ({ text, highlight }: { text: string; highlight: string }) => {
+  const parts = text.split(highlight);
+  return (
+    <motion.h1
+      className="text-5xl md:text-6xl font-extrabold tracking-tight text-heading text-balance"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+    >
+      {parts[0]}
+      <motion.span
+        className="text-primary"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
+        {highlight}
+      </motion.span>
+      {parts[1] || ""}
+    </motion.h1>
+  );
+};
 
 const HeroSection = () => (
   <section id="about" className="min-h-screen flex items-center pt-16">
@@ -21,16 +45,24 @@ const HeroSection = () => (
 
         <AnimatedSection delay={0.1}>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
-            <img
+            <motion.img
               src={profilePhoto}
               alt="Avinash Reddy"
-              className="w-[120px] h-[120px] rounded-full object-cover shadow-smooth ring-4 ring-background"
+              className="w-[120px] h-[120px] rounded-full object-cover shadow-smooth ring-4 ring-primary/30"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
             />
             <div>
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-heading text-balance">
-                Avinash <span className="text-primary">Reddy</span>
-              </h1>
-              <p className="mt-2 text-xl font-semibold text-primary">Software Engineer</p>
+              <TypeWriter text="Avinash Reddy" highlight="Reddy" />
+              <motion.p
+                className="mt-2 text-xl font-semibold text-primary"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.8 }}
+              >
+                Software Engineer
+              </motion.p>
             </div>
           </div>
         </AnimatedSection>
@@ -80,15 +112,20 @@ const HeroSection = () => (
 
         <AnimatedSection delay={0.5}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-12">
-            {stats.map((s) => (
-              <div
+            {stats.map((s, i) => (
+              <motion.div
                 key={s.label}
                 className="bg-card p-4 rounded-card shadow-smooth hover:border-primary/20 border border-transparent transition-colors text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.4 }}
+                whileHover={{ scale: 1.05 }}
               >
                 <span className="text-2xl">{s.icon}</span>
                 <p className="text-lg font-bold text-heading tabular-nums mt-1">{s.label}</p>
                 <p className="text-xs text-body">{s.sub}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </AnimatedSection>
