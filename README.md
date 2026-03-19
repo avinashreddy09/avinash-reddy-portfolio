@@ -16,7 +16,7 @@ A modern, responsive portfolio website showcasing my work as a Software Develope
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://avinash-reddy-portfolio.vercel.app) *(Update this link after Vercel deployment)*
+[View Live Portfolio](https://avinash-reddy-portfolio.vercel.app) *( Vercel deployment Link)*
 
 ## ✨ Features
 
