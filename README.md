@@ -30,7 +30,6 @@ A modern, responsive portfolio website showcasing my work as a Software Develope
 - **UI Components**: Radix UI
 - **Icons**: Lucide React
 - **Deployment**: Vercel
-- ## 📁 Project Structure
 avinash-reddy-portfolio/
 ├── public/
 │   └── (static assets)
@@ -53,7 +52,6 @@ avinash-reddy-portfolio/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
-
 ## 🚀 Getting Started
 
 ### Prerequisites
