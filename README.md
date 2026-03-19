@@ -33,6 +33,7 @@ A modern, responsive portfolio website showcasing my work as a Software Develope
 
 ## 📁 Project Structure
   avinash-reddy-portfolio/
+  
 ├── public/ # Static assets
 ├── src/
 │ ├── assets/ # Images and media files
