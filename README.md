@@ -30,31 +30,29 @@ A modern, responsive portfolio website showcasing my work as a Software Develope
 - **UI Components**: Radix UI
 - **Icons**: Lucide React
 - **Deployment**: Vercel
-
-## 📁 Project Structure
-  avinash-reddy-portfolio/
-  
-├── public/ # Static assets
+- ## 📁 Project Structure
+avinash-reddy-portfolio/
+├── public/
+│   └── (static assets)
 ├── src/
-│ ├── assets/ # Images and media files
-│ │ └── profile-photo.jpg
-│ ├── components/ # React components
-│ │ ├── AnimatedSection.tsx
-│ │ ├── HeroSection.tsx
-│ │ └── scroll-area.tsx
-│ ├── App.css # Global styles
-│ ├── App.tsx # Main app component
-│ ├── main.tsx # Entry point
-│ └── index.css # Tailwind imports
-├── index.html # HTML template
-├── package.json # Dependencies
-├── package-lock.json # Locked versions
-├── tailwind.config.js # Tailwind configuration
-├── tsconfig.json # TypeScript config
-├── vite.config.ts # Vite configuration
-└── README.md # Project documentation
-
-text
+│   ├── assets/
+│   │   └── profile-photo.jpg
+│   ├── components/
+│   │   ├── AnimatedSection.tsx
+│   │   ├── HeroSection.tsx
+│   │   └── ui/
+│   │       └── scroll-area.tsx
+│   ├── App.css
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 
 ## 🚀 Getting Started
 
