@@ -1,6 +1,16 @@
 # Avinash Reddy - Software Developer Portfolio
 
-![Portfolio Screenshot](https://via.placeholder.com/1200x630/0a0a0a/ffffff?text=Avinash+Reddy+Portfolio)
+<img width="1840" height="857" alt="image" src="https://github.com/user-attachments/assets/ebf26fa0-600a-4fe3-bb83-7718ce909f4d" />  
+ 
+ <img width="1822" height="837" alt="image" src="https://github.com/user-attachments/assets/43f5a1f5-a2d6-4877-be11-7be6b7f1f613" />
+ <img width="1716" height="869" alt="image" src="https://github.com/user-attachments/assets/028bfd90-6f1d-4ee0-b486-d7680bee7e40" />
+ <img width="1782" height="866" alt="image" src="https://github.com/user-attachments/assets/d0273500-6ff9-45cd-9d73-6eb0be263015" />
+ <img width="1853" height="874" alt="image" src="https://github.com/user-attachments/assets/40678795-78d1-4d8a-9f92-a088a1538c22" />
+
+
+
+
+
 
 A modern, responsive portfolio website showcasing my work as a Software Developer specializing in intelligent systems, automation tools, and full-stack applications.
 
@@ -30,6 +40,8 @@ A modern, responsive portfolio website showcasing my work as a Software Develope
 - **UI Components**: Radix UI
 - **Icons**: Lucide React
 - **Deployment**: Vercel
+- ## 📁 Detailed Project Structure
+  
 avinash-reddy-portfolio/
 ├── public/
 │   └── (static assets)
@@ -52,6 +64,7 @@ avinash-reddy-portfolio/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+
 ## 🚀 Getting Started
 
 ### Prerequisites
