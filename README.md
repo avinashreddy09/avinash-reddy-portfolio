@@ -42,24 +42,7 @@ Direct links to GitHub, LinkedIn, and email for quick access
 
 ---
 
-📁 Project Structure
 
-avinash-reddy-portfolio/
-├── public/              # Static assets
-├── src/
-│   ├── assets/          # Images and media files
-│   ├── components/      # Reusable UI components
-│   │   ├── AnimatedSection.tsx
-│   │   ├── HeroSection.tsx
-│   │   └── ui/
-│   ├── App.tsx          # Root component
-│   ├── main.tsx         # Entry point
-│   └── styles/          # Global styles
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── vite.config.ts
 
 
 ---
