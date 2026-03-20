@@ -41,6 +41,7 @@ A modern, responsive portfolio website showcasing my work as a Software Develope
 - **Icons**: Lucide React
 - **Deployment**: Vercel
 - ## 📁 Detailed Project Structure
+- '''
   
 avinash-reddy-portfolio/
 ├── public/
@@ -64,6 +65,7 @@ avinash-reddy-portfolio/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+'''
 
 ## 🚀 Getting Started
 
