@@ -3,10 +3,10 @@ import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
 
 const categories = [
-  { icon: <Code size={24} />, title: "Languages", skills: ["C", "C++", "Python"] },
-  { icon: <Globe size={24} />, title: "Web Technologies", skills: ["HTML", "CSS", "JavaScript"] },
-  { icon: <Wrench size={24} />, title: "Tools & Platforms", skills: ["Git", "GitHub", "Linux", "LeetCode"] },
-  { icon: <Users size={24} />, title: "Soft Skills", skills: ["Problem Solving", "Team Collaboration", "Time Management"] },
+  { icon: <Code size={24} />, title: "Languages", skills: ["C", "C++", "Python","Java"] },
+  { icon: <Globe size={24} />, title: "Web Technologies", skills: ["HTML", "CSS", "JavaScript","Tailwind CSS"] },
+  { icon: <Wrench size={24} />, title: "Tools & Platforms", skills: ["Git", "GitHub", "Linux", "LeetCode","VS Code"] },
+  { icon: <Users size={24} />, title: "Soft Skills", skills: ["Problem Solving", "Team Collaboration", "Time Management","Adaptability","Project Management"] },
 ];
 
 const SkillsSection = () => (
