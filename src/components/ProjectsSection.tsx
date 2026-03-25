@@ -13,7 +13,7 @@ const projects = [
     ],
     tech: ["React", "Node.js", "MongoDB", "OpenAI API", "Tailwind CSS", "JWT"],
     github: "https://github.com/avinashreddy09/Ai-resume-builder",
-    live: "https://jioresume.co/",
+    live: "https://jioresume.com/",
     imageSrc: "/certificates/ai-resume-builder.png",
     imageAlt: "AI Resume Builder Project Screenshot"
   },
