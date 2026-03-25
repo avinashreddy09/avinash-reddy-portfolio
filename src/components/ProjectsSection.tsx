@@ -26,7 +26,7 @@ const projects = [
       "Reduced manual application effort by over 80% through automated workflows, improving speed and scalability"
     ],
     tech: ["Python", "Selenium", "Web Automation"],
-    github: "https://github.com/avinashreddy09/naukri-automation",
+    github: "https://github.com/avinashreddy09/naukari-job-automation",
     live: null,
     imageSrc: "/certificates/naukri-automation.png",
     imageAlt: "Naukri Job Automation Project Screenshot"
@@ -40,7 +40,7 @@ const projects = [
 
     ],
     tech: ["Python", "Streamlit", "LightGBM", "scikit-learn", "geopy", "Render"],
-    github: "https://github.com/avinashreddy09/fraud-detection",
+    github: "https://github.com/avinashreddy09/Fraud_Detection_System",
     live: "https://fraud-detection-demo.vercel.app",
     imageSrc: "/certificates/fraud-detection.png",
     imageAlt: "Credit Card Fraud Detection Project Screenshot"
@@ -54,7 +54,7 @@ const projects = [
    
     ],
     tech: ["Python", "Flask", "AST Parsing", "Levenshtein Distance"],
-    github: "https://github.com/avinashreddy09/plagiarism-detector",
+    github: "https://github.com/avinashreddy09/Plagiarism-Detection-Tool-for-Code-Submissions",
     live: "https://plagiarism-detection-tool.vercel.app/",
     imageSrc: "/certificates/plagiarism-detection.png",
     imageAlt: "Plagiarism Detection Tool Project Screenshot"
