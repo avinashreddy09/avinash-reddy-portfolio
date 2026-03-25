@@ -7,7 +7,7 @@ const certs = [
     title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
     issuer: "ORACLE",
     date: "Oct 2025",
-    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7A40C38C10648B1D7272E01DF60927DE1D1C625C1918932DEC4405EB81269580",
+    link: "https://drive.google.com/file/d/13phOdKiwNundXyolBTPUMHv5DBoMJpSF/view?usp=drivesdk",
     imageSrc: "/certificates/oracle-devops.png",  // Path from public folder
     imageAlt: "Oracle DevOps Professional Certificate",
   },
