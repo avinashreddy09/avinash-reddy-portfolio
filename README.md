@@ -105,7 +105,8 @@ npm run preview
 
 🌐 Live Demo
 
-👉 https://avinash-reddy-portfolio-jttpuvfgu.vercel.app/
+👉 https://avinash-reddy-portfolio-dbx2vjk81.vercel.app/
+
 
 
 ---
