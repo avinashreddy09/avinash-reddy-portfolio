@@ -25,15 +25,10 @@ const projects = [
       "Implemented hybrid search combining FAISS (dense) and BM25 (sparse) retrieval for improved recall and accuracy",
       "Conducted failure analysis on hallucination cases and optimized chunking strategies for better context retrieval"
     ],
-<<<<<<< HEAD
     tech: ["LangChain", "FAISS", "ChromaDB", "OpenAI API", "Python", "Vector Search"],
     github: "https://github.com/avinashreddy09/RAG-based-Document-Q-A-System-",
-=======
-    tech: ["Python", "Selenium", "Web Automation"],
-    github: "https://github.com/avinashreddy09/naukari-job-automation",
->>>>>>> 2137feb464172a0bd0aace268b6da22fdbff22fb
     live: null,
-    imageSrc: "/certificates/rag-system.png.png",
+    imageSrc: "/certificates/rag-system.png",
     imageAlt: "RAG Document Q&A System"
   },
   {
@@ -47,7 +42,7 @@ const projects = [
     tech: ["YOLOv8", "PyTorch", "PaddleOCR", "OpenCV", "Docker", "Jenkins", "Python"],
     github: "https://github.com/avinashreddy09/Real-Time-Detection-of-Helmet-Violations-and-Capturing-Bike-Numbers-from-Number-Plates",
     live: null,
-    imageSrc: "/certificates/helmet-detection.png.png",
+    imageSrc: "/certificates/helmet-detection.png",
     imageAlt: "Helmet Violation Detection System"
   },
   {
@@ -63,25 +58,7 @@ const projects = [
     live: "https://fraud-detection-demo.vercel.app",
     imageSrc: "/certificates/fraud-detection.png",
     imageAlt: "Credit Card Fraud Detection Project Screenshot"
-<<<<<<< HEAD
   }
-=======
-  },
-  {
-    title: "Plagiarism Detection Tool",
-    description: "Plagiarism detection system using Python with AST parsing and tokenization for code structure analysis.",
-    points: [
-      "Engineered plagiarism detection system using Python with AST parsing and tokenization for code structure analysis",
-      "Applied Levenshtein Distance and logical similarity matching to identify partial and complete code reuse",
-   
-    ],
-    tech: ["Python", "Flask", "AST Parsing", "Levenshtein Distance"],
-    github: "https://github.com/avinashreddy09/Plagiarism-Detection-Tool-for-Code-Submissions",
-    live: "https://plagiarism-detection-tool.vercel.app/",
-    imageSrc: "/certificates/plagiarism-detection.png",
-    imageAlt: "Plagiarism Detection Tool Project Screenshot"
-  },
->>>>>>> 2137feb464172a0bd0aace268b6da22fdbff22fb
 ];
 
 const ProjectsSection = () => (
@@ -93,7 +70,6 @@ const ProjectsSection = () => (
         {projects.map((project, index) => (
           <AnimatedSection key={project.title} delay={index * 0.1}>
             <div className="bg-card rounded-card shadow-smooth overflow-hidden hover:-translate-y-2 transition-all duration-300 group h-full flex flex-col">
-              {/* Project Image */}
               {project.imageSrc ? (
                 <div className="relative h-48 overflow-hidden bg-gray-100">
                   <img 
@@ -101,9 +77,9 @@ const ProjectsSection = () => (
                     alt={project.imageAlt}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const fallback = e.currentTarget.parentElement?.querySelector('.fallback-image');
-                      if (fallback) fallback.classList.remove('hidden');
+                      e.currentTarget.style.display = "none";
+                      const fallback = e.currentTarget.parentElement?.querySelector(".fallback-image");
+                      if (fallback) fallback.classList.remove("hidden");
                     }}
                   />
                   <div className="fallback-image hidden absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5">
@@ -112,7 +88,6 @@ const ProjectsSection = () => (
                       <p className="text-sm text-body mt-2">Project Preview</p>
                     </div>
                   </div>
-                  {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               ) : (
@@ -121,9 +96,7 @@ const ProjectsSection = () => (
                 </div>
               )}
               
-              {/* Project Content */}
               <div className="p-6 flex flex-col flex-1">
-                {/* Project Header */}
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
                   <h3 className="text-xl font-bold text-heading leading-tight">{project.title}</h3>
                   <div className="flex gap-2">
@@ -152,10 +125,8 @@ const ProjectsSection = () => (
                   </div>
                 </div>
                 
-                {/* Description */}
                 <p className="text-body text-sm mb-3 leading-relaxed">{project.description}</p>
                 
-                {/* Key Points - Limited to first 2 for card layout */}
                 <ul className="space-y-1.5 mb-4">
                   {project.points.slice(0, 2).map((point, i) => (
                     <li key={i} className="text-xs text-body/80 leading-relaxed pl-3 border-l-2 border-primary/30">
@@ -164,7 +135,6 @@ const ProjectsSection = () => (
                   ))}
                 </ul>
                 
-                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-1.5 mt-auto">
                   {project.tech.slice(0, 4).map((tech) => (
                     <span
