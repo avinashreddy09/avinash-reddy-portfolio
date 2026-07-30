@@ -28,7 +28,7 @@ const projects = [
     tech: ["LangChain", "FAISS", "ChromaDB", "OpenAI API", "Python", "Vector Search"],
     github: "https://github.com/avinashreddy09/RAG-based-Document-Q-A-System-",
     live: null,
-    imageSrc: "/certificates/rag-system.png",
+    imageSrc: "/certificates/rag-system.png.png",
     imageAlt: "RAG Document Q&A System"
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     tech: ["YOLOv8", "PyTorch", "PaddleOCR", "OpenCV", "Docker", "Jenkins", "Python"],
     github: "https://github.com/avinashreddy09/Real-Time-Detection-of-Helmet-Violations-and-Capturing-Bike-Numbers-from-Number-Plates",
     live: null,
-    imageSrc: "/certificates/helmet-detection.png",
+    imageSrc: "/certificates/helmet-detection.png.png",
     imageAlt: "Helmet Violation Detection System"
   },
   {
