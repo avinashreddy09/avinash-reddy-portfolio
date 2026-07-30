@@ -25,8 +25,13 @@ const projects = [
       "Implemented hybrid search combining FAISS (dense) and BM25 (sparse) retrieval for improved recall and accuracy",
       "Conducted failure analysis on hallucination cases and optimized chunking strategies for better context retrieval"
     ],
+<<<<<<< HEAD
     tech: ["LangChain", "FAISS", "ChromaDB", "OpenAI API", "Python", "Vector Search"],
     github: "https://github.com/avinashreddy09/RAG-based-Document-Q-A-System-",
+=======
+    tech: ["Python", "Selenium", "Web Automation"],
+    github: "https://github.com/avinashreddy09/naukari-job-automation",
+>>>>>>> 2137feb464172a0bd0aace268b6da22fdbff22fb
     live: null,
     imageSrc: "/certificates/rag-system.png.png",
     imageAlt: "RAG Document Q&A System"
@@ -58,7 +63,25 @@ const projects = [
     live: "https://fraud-detection-demo.vercel.app",
     imageSrc: "/certificates/fraud-detection.png",
     imageAlt: "Credit Card Fraud Detection Project Screenshot"
+<<<<<<< HEAD
   }
+=======
+  },
+  {
+    title: "Plagiarism Detection Tool",
+    description: "Plagiarism detection system using Python with AST parsing and tokenization for code structure analysis.",
+    points: [
+      "Engineered plagiarism detection system using Python with AST parsing and tokenization for code structure analysis",
+      "Applied Levenshtein Distance and logical similarity matching to identify partial and complete code reuse",
+   
+    ],
+    tech: ["Python", "Flask", "AST Parsing", "Levenshtein Distance"],
+    github: "https://github.com/avinashreddy09/Plagiarism-Detection-Tool-for-Code-Submissions",
+    live: "https://plagiarism-detection-tool.vercel.app/",
+    imageSrc: "/certificates/plagiarism-detection.png",
+    imageAlt: "Plagiarism Detection Tool Project Screenshot"
+  },
+>>>>>>> 2137feb464172a0bd0aace268b6da22fdbff22fb
 ];
 
 const ProjectsSection = () => (
