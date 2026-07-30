@@ -7,7 +7,7 @@ const stats = [
   { icon: "🏆", label: "Top 1.5%", sub: "Young Turks" },
   { icon: "🚀", label: "200+ Users", sub: "Automation Tool" },
   { icon: "⚡", label: "80%", sub: "Effort Reduction" },
-  { icon: "🧠", label: "150+", sub: "LeetCode Problems" },
+  { icon: "🧠", label: "250+", sub: "LeetCode Problems" },
 ];
 
 const TypeWriter = ({ text, highlight }: { text: string; highlight: string }) => {

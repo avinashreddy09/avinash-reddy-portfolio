@@ -7,7 +7,7 @@ const education = [
     school: "Lovely Professional University",
     location: "Phagwara, Punjab",
     degree: "B.Tech Computer Science and Engineering",
-    grade: "CGPA: 6.65",
+    grade: "CGPA: 6.85",
     period: "Aug 2023 – Present",
   },
   {

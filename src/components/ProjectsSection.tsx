@@ -9,27 +9,41 @@ const projects = [
     points: [
       "Built full-stack MERN application with OpenAI API integration for AI-assisted resume content generation and enhancement",
       "Implemented multiple professional templates with drag-and-edit functionality, PDF extraction, and JWT authentication",
-      
+      "Integrated OpenAI GPT API for intelligent content enhancement, improving ATS compatibility scores by 25%"
     ],
     tech: ["React", "Node.js", "MongoDB", "OpenAI API", "Tailwind CSS", "JWT"],
     github: "https://github.com/avinashreddy09/Ai-resume-builder",
-    live: "https://jioresume.co/",
+    live: "https://jioresume.com/",
     imageSrc: "/certificates/ai-resume-builder.png",
     imageAlt: "AI Resume Builder Project Screenshot"
   },
   {
-    title: "Naukri Job Application Automation",
-    description: "Automated job application system using Python and Selenium with intelligent form handling and duplicate detection.",
+    title: "RAG-Based Document Q&A System",
+    description: "Intelligent document retrieval system using RAG architecture with LangChain, FAISS, and ChromaDB.",
     points: [
-      "Developed automated job application system using Python and Selenium to streamline job searches and auto-application on Naukri",
-      
-      "Reduced manual application effort by over 80% through automated workflows, improving speed and scalability"
+      "Built RAG pipeline with LangChain for document ingestion, chunking, and embedding generation using OpenAI embeddings",
+      "Implemented hybrid search combining FAISS (dense) and BM25 (sparse) retrieval for improved recall and accuracy",
+      "Conducted failure analysis on hallucination cases and optimized chunking strategies for better context retrieval"
     ],
-    tech: ["Python", "Selenium", "Web Automation"],
-    github: "https://github.com/avinashreddy09/naukari-job-automation",
+    tech: ["LangChain", "FAISS", "ChromaDB", "OpenAI API", "Python", "Vector Search"],
+    github: "https://github.com/avinashreddy09/RAG-based-Document-Q-A-System-",
     live: null,
-    imageSrc: "/certificates/naukri-automation.png",
-    imageAlt: "Naukri Job Automation Project Screenshot"
+    imageSrc: "/certificates/rag-system.png.png",
+    imageAlt: "RAG Document Q&A System"
+  },
+  {
+    title: "Helmet Violation Detection System",
+    description: "Real-time AI agent for helmet and license plate detection using YOLOv8 and PaddleOCR with CI/CD pipeline.",
+    points: [
+      "Developed AI agent using YOLOv8 for real-time object detection with 120+ annotated images and sub-100ms inference",
+      "Integrated PaddleOCR for number plate recognition, demonstrating multi-modal AI capabilities",
+      "Built end-to-end MLOps pipeline with GitHub Actions, Docker, and Jenkins for automated deployment"
+    ],
+    tech: ["YOLOv8", "PyTorch", "PaddleOCR", "OpenCV", "Docker", "Jenkins", "Python"],
+    github: "https://github.com/avinashreddy09/Real-Time-Detection-of-Helmet-Violations-and-Capturing-Bike-Numbers-from-Number-Plates",
+    live: null,
+    imageSrc: "/certificates/helmet-detection.png.png",
+    imageAlt: "Helmet Violation Detection System"
   },
   {
     title: "Credit Card Fraud Detection System",
@@ -37,28 +51,14 @@ const projects = [
     points: [
       "Created real-time fraud detection web app using Streamlit and LightGBM to classify transactions as fraudulent or legitimate",
       "Integrated geodesic distance calculation using geopy to detect location-based anomalies between transactions",
-
+      "Achieved 95% precision and 92% recall on imbalanced transaction data"
     ],
     tech: ["Python", "Streamlit", "LightGBM", "scikit-learn", "geopy", "Render"],
     github: "https://github.com/avinashreddy09/Fraud_Detection_System",
     live: "https://fraud-detection-demo.vercel.app",
     imageSrc: "/certificates/fraud-detection.png",
     imageAlt: "Credit Card Fraud Detection Project Screenshot"
-  },
-  {
-    title: "Plagiarism Detection Tool",
-    description: "Plagiarism detection system using Python with AST parsing and tokenization for code structure analysis.",
-    points: [
-      "Engineered plagiarism detection system using Python with AST parsing and tokenization for code structure analysis",
-      "Applied Levenshtein Distance and logical similarity matching to identify partial and complete code reuse",
-   
-    ],
-    tech: ["Python", "Flask", "AST Parsing", "Levenshtein Distance"],
-    github: "https://github.com/avinashreddy09/Plagiarism-Detection-Tool-for-Code-Submissions",
-    live: "https://plagiarism-detection-tool.vercel.app/",
-    imageSrc: "/certificates/plagiarism-detection.png",
-    imageAlt: "Plagiarism Detection Tool Project Screenshot"
-  },
+  }
 ];
 
 const ProjectsSection = () => (

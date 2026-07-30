@@ -42,9 +42,9 @@ const AchievementsSection = () => (
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-heading">Competitive Programming</h3>
-                <p className="text-2xl font-bold text-primary mt-1 tabular-nums">150+ Problems</p>
+                <p className="text-2xl font-bold text-primary mt-1 tabular-nums">250+ Problems</p>
                 <p className="text-sm text-body mt-2 text-pretty">
-                  Solved 150+ LeetCode problems, primarily medium and hard difficulty, focusing on data structures, algorithms, and optimization techniques.
+                  Solved 250+ LeetCode problems, primarily medium and hard difficulty, focusing on data structures, algorithms, and optimization techniques.
                 </p>
                 <a
                   href="https://leetcode.com/"
