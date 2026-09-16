@@ -91,7 +91,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <a
-              href="https://drive.google.com/file/d/1vFWiP3uLWLrdS2sqBDtAcHE0HqisGXMR/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1lm-p5ocU-RyOxP6Hs5uamW9ebxwwzBKA/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:opacity-90 transition-opacity"

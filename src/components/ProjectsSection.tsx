@@ -4,60 +4,64 @@ import AnimatedSection from "./AnimatedSection";
 
 const projects = [
   {
+    title: "PrismRAG — Multimodal Agentic RAG",
+    description: "Multimodal agentic RAG system that embeds text, URLs, PDFs, images, audio, and video into one shared Gemini vector space with 3D visualization.",
+    points: [
+      "Architected a multimodal agentic RAG system embedding text, URLs, PDFs, images, audio, and video into one shared Gemini Embedding 2 vector space (768 dims)",
+      "Integrated Google ADK agent with two tools (retrieve_relevant_context, inspect_embedding_space) for autonomous reasoning and grounded, cited answers",
+      "Built a real-time 3D embedding visualization with Three.js, rendering each source as a colored point and query points in orange after each ask",
+      "Deployed on Vercel with FastAPI backend, React frontend, SSRF protection, and configurable CORS — no external vector database"
+    ],
+    tech: ["Python", "FastAPI", "Gemini Embedding 2", "Gemini 3 Flash", "Google ADK", "React", "TypeScript", "Three.js", "Vercel"],
+    github: "https://github.com/avinashreddy09/PrismRAG",
+    live: "https://multimodal-rag-lovat.vercel.app",
+    imageSrc: "/certificates/prismrag.png",
+    imageAlt: "PrismRAG Multimodal Agentic RAG Project Screenshot"
+  },
+  {
     title: "AI Resume Builder",
-    description: "AI-powered resume builder with live templates, PDF extraction, drag-and-edit sections, and secure sharing.",
+    description: "AI-powered resume builder with live templates, PDF extraction, drag-and-edit sections, and secure sharing — used by 500+ real users.",
     points: [
       "Built full-stack MERN application with OpenAI API integration for AI-assisted resume content generation and enhancement",
       "Implemented multiple professional templates with drag-and-edit functionality, PDF extraction, and JWT authentication",
-      "Integrated OpenAI GPT API for intelligent content enhancement, improving ATS compatibility scores by 25%"
+      "Integrated OpenAI GPT API for intelligent content enhancement, improving ATS compatibility scores by 25%",
+      "Maintained 85% test coverage and 99.9% production uptime, raising form completion to 94%"
     ],
-    tech: ["React", "Node.js", "MongoDB", "OpenAI API", "Tailwind CSS", "JWT"],
+    tech: ["React", "Node.js", "MongoDB", "OpenAI API", "Tailwind CSS", "JWT", "Vercel"],
     github: "https://github.com/avinashreddy09/Ai-resume-builder",
     live: "https://jioresume.com/",
     imageSrc: "/certificates/ai-resume-builder.png",
     imageAlt: "AI Resume Builder Project Screenshot"
   },
   {
-    title: "RAG-Based Document Q&A System",
-    description: "Intelligent document retrieval system using RAG architecture with LangChain, FAISS, and ChromaDB.",
+    title: "AI Thumbnail Generator",
+    description: "AI-powered thumbnail generation tool with 10+ reusable components, Clerk authentication, and ImageKit integration.",
     points: [
-      "Built RAG pipeline with LangChain for document ingestion, chunking, and embedding generation using OpenAI embeddings",
-      "Implemented hybrid search combining FAISS (dense) and BM25 (sparse) retrieval for improved recall and accuracy",
-      "Conducted failure analysis on hallucination cases and optimized chunking strategies for better context retrieval"
+      "Constructed 10+ reusable UI components in React and TypeScript, cutting duplicate code across 5+ features",
+      "Established Clerk for authentication and ImageKit for asset handling, reducing page load time by 40%",
+      "Integrated AI-driven thumbnail generation with real-time preview and export functionality",
+      "Deployed on Vercel with responsive design and optimized performance"
     ],
-    tech: ["LangChain", "FAISS", "ChromaDB", "OpenAI API", "Python", "Vector Search"],
-    github: "https://github.com/avinashreddy09/RAG-based-Document-Q-A-System-",
-    live: null,
-    imageSrc: "/certificates/rag-system.png.png",
-    imageAlt: "RAG Document Q&A System"
+    tech: ["React", "TypeScript", "Tailwind CSS", "Clerk", "ImageKit", "REST APIs", "Vercel"],
+    github: "https://github.com/avinashreddy09/AI-Thumbnail-Generator",
+    live: "https://ai-thumbnail-generator-rust.vercel.app",
+    imageSrc: "/certificates/ai-thumbnail-generator.png",
+    imageAlt: "AI Thumbnail Generator Project Screenshot"
   },
   {
     title: "Helmet Violation Detection System",
-    description: "Real-time AI agent for helmet and license plate detection using YOLOv8 and PaddleOCR with CI/CD pipeline.",
+    description: "Real-time AI system for helmet and license plate detection using YOLOv8 and PaddleOCR with full MLOps pipeline.",
     points: [
-      "Developed AI agent using YOLOv8 for real-time object detection with 120+ annotated images and sub-100ms inference",
+      "Developed AI system using YOLOv8 for real-time object detection with 120+ annotated images and sub-100ms inference",
       "Integrated PaddleOCR for number plate recognition, demonstrating multi-modal AI capabilities",
-      "Built end-to-end MLOps pipeline with GitHub Actions, Docker, and Jenkins for automated deployment"
+      "Built end-to-end MLOps pipeline with GitHub Actions, Docker, and Jenkins for automated deployment",
+      "Conducted systematic edge-case testing across varying lighting, angles, and occlusions to validate detection robustness"
     ],
-    tech: ["YOLOv8", "PyTorch", "PaddleOCR", "OpenCV", "Docker", "Jenkins", "Python"],
+    tech: ["YOLOv8", "PyTorch", "PaddleOCR", "OpenCV", "Docker", "Jenkins", "GitHub Actions", "Python"],
     github: "https://github.com/avinashreddy09/Real-Time-Detection-of-Helmet-Violations-and-Capturing-Bike-Numbers-from-Number-Plates",
     live: null,
-    imageSrc: "/certificates/helmet-detection.png.png",
+    imageSrc: "/certificates/helmet-detection.png",
     imageAlt: "Helmet Violation Detection System"
-  },
-  {
-    title: "Credit Card Fraud Detection System",
-    description: "Real-time fraud detection web app using Streamlit and LightGBM with location-based anomaly detection.",
-    points: [
-      "Created real-time fraud detection web app using Streamlit and LightGBM to classify transactions as fraudulent or legitimate",
-      "Integrated geodesic distance calculation using geopy to detect location-based anomalies between transactions",
-      "Achieved 95% precision and 92% recall on imbalanced transaction data"
-    ],
-    tech: ["Python", "Streamlit", "LightGBM", "scikit-learn", "geopy", "Render"],
-    github: "https://github.com/avinashreddy09/Fraud_Detection_System",
-    live: "https://fraud-detection-demo.vercel.app",
-    imageSrc: "/certificates/fraud-detection.png",
-    imageAlt: "Credit Card Fraud Detection Project Screenshot"
   }
 ];
 
@@ -128,15 +132,15 @@ const ProjectsSection = () => (
                 <p className="text-body text-sm mb-3 leading-relaxed">{project.description}</p>
                 
                 <ul className="space-y-1.5 mb-4">
-                  {project.points.slice(0, 2).map((point, i) => (
+                  {project.points.slice(0, 3).map((point, i) => (
                     <li key={i} className="text-xs text-body/80 leading-relaxed pl-3 border-l-2 border-primary/30">
-                      {point.length > 100 ? point.substring(0, 100) + "..." : point}
+                      {point.length > 120 ? point.substring(0, 120) + "..." : point}
                     </li>
                   ))}
                 </ul>
                 
                 <div className="flex flex-wrap gap-1.5 mt-auto">
-                  {project.tech.slice(0, 4).map((tech) => (
+                  {project.tech.slice(0, 5).map((tech) => (
                     <span
                       key={tech}
                       className="px-2 py-0.5 text-xs font-medium bg-primary/10 text-primary rounded-full"
@@ -144,9 +148,9 @@ const ProjectsSection = () => (
                       {tech}
                     </span>
                   ))}
-                  {project.tech.length > 4 && (
+                  {project.tech.length > 5 && (
                     <span className="px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-600 rounded-full">
-                      +{project.tech.length - 4}
+                      +{project.tech.length - 5}
                     </span>
                   )}
                 </div>

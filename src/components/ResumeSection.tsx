@@ -14,7 +14,7 @@ const ResumeSection = () => (
             Download my resume to learn more about my experience, skills, and education.
           </p>
           <a
-            href="https://drive.google.com/file/d/1uXMfs541ulHsfrRj2YeMVcN0KMdalHh2/view?usp=sharing"
+            href="https://drive.google.com/file/d/1lm-p5ocU-RyOxP6Hs5uamW9ebxwwzBKA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-all active:scale-[0.98] text-lg"
